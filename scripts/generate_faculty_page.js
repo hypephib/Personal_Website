@@ -15,12 +15,7 @@ function processData(allText){
     for (var i=1; i<allTextLines.length; i++) {
         var data = allTextLines[i].split(',');
         if (data.length == headers.length) {
-
-            var tarr = [];
-            for (var j=0; j<headers.length; j++) {
-                tarr.push(data[j]);
-            }
-            lines.push(tarr);
+            lines.push(data);
         }
     }
     generatePage(lines);
@@ -29,30 +24,33 @@ function processData(allText){
 
 function generatePage(data){
     console.log(data);
+    var section = document.createElement("SECTION");
+    section.setAttribute("class", "bg-light page-section");
+    section.setAttribute("id", "facultySection");
+    document.body.appendChild(section);
+
+    // Create the main container
+    var mainContainer = document.createElement("div");
+    mainContainer.setAttribute("class", "container");
+
+    //Fill the main container with rows
+
+    // Header Row
+    mainContainer.appendChild(generateHeader());
+
+    // Row of Faculty (Feed three members at a time)
+    for(var x = 0; x < data.length; x+=3){
+        if (x+3<data.length){
+            var end = x+3;
+        }else{
+            var end = data.length;
+        }
+        mainContainer.appendChild(generateFacultyList(data.slice(x, end)));
+    }
+
+    // Finally, add it to the section 
+    section.appendChild(mainContainer);
 }
-
-var section = document.createElement("SECTION");
-section.setAttribute("class", "bg-light page-section");
-section.setAttribute("id", "facultySection");
-document.body.appendChild(section);
-
-
-
-
-// Create the main container
-var mainContainer = document.createElement("div");
-mainContainer.setAttribute("class", "container");
-
-//Fill the main container with rows
-
-// Header Row
-mainContainer.appendChild(generateHeader());
-
-// Row of Faculty 
-mainContainer.appendChild(generateFacultyList());
-
-// Finally, add it to the section 
-section.appendChild(mainContainer);
 
 function generateHeader(){
     var header = document.createElement("div");
@@ -71,78 +69,80 @@ function generateHeader(){
     return header;
 }
 
-function generateFacultyList(){
+function generateFacultyList(data){
     var rowFaculty = document.createElement("div");
     rowFaculty.setAttribute("class", "row");
 
-    var colMember = document.createElement("div");
-    colMember.setAttribute("class", "col-sm-4");
+    data.array.forEach(element => {
+        var colMember = document.createElement("div");
+        colMember.setAttribute("class", "col-sm-4");
 
-    var member = document.createElement("div");
-    member.setAttribute("class", "team-member");
+        var member = document.createElement("div");
+        member.setAttribute("class", "team-member");
 
-    //image
-    var image = document.createElement("IMG");
-    image.setAttribute("class", "mx-auto rounded-circle");
-    image.src = "img/faculty/julio_m_fernandez.jpg";
-    
-    //name
-    var name = document.createElement("h4")
-    name.appendChild(document.createTextNode("Julio M. Fernandez"));
+        //image
+        var image = document.createElement("IMG");
+        image.setAttribute("class", "mx-auto rounded-circle");
+        image.src = "img/faculty/" + element[2];
+        
+        //name
+        var name = document.createElement("h4")
+        name.appendChild(document.createTextNode(element[1]));
 
-    //postion and research interest
-    var position = document.createElement("p");
-    position.setAttribute("class", "text-muted") 
-    position.appendChild(document.createTextNode("Professor"));
-    position.appendChild(document.createElement("br"));
-    
-    var interest = document.createElement("em");
-    interest.appendChild(document.createTextNode("Structure & Biophysics, Neurobiology"));
-    position.appendChild(interest);
+        //postion and research interest(Unchanged for now)
+        var position = document.createElement("p");
+        position.setAttribute("class", "text-muted") 
+        position.appendChild(document.createTextNode("Professor"));
+        position.appendChild(document.createElement("br"));
+        
+        var interest = document.createElement("em");
+        interest.appendChild(document.createTextNode("Structure & Biophysics, Neurobiology"));
+        position.appendChild(interest);
 
-    //profile and lab links 
+        //profile and lab links 
 
-    var listOfLinks = document.createElement("ul");
-    listOfLinks.setAttribute("class", "list-inline social-buttons");
+        var listOfLinks = document.createElement("ul");
+        listOfLinks.setAttribute("class", "list-inline social-buttons");
 
-    var profile = document.createElement("li");
-    profile.setAttribute("class", "list-inline-item");
+        var profile = document.createElement("li");
+        profile.setAttribute("class", "list-inline-item");
 
-    var profileLink = document.createElement("a");
-    profileLink.setAttribute("href", "https://biology.columbia.edu/people/fernandez");
+        var profileLink = document.createElement("a");
+        profileLink.setAttribute("href", element[3]);
 
-    var profileIcon = document.createElement("i");
-    profileIcon.setAttribute("class", "fa fa-user");
+        var profileIcon = document.createElement("i");
+        profileIcon.setAttribute("class", "fa fa-user");
 
-    profileLink.appendChild(profileIcon);
-    profile.append(profileLink);
+        profileLink.appendChild(profileIcon);
+        profile.append(profileLink);
 
-    listOfLinks.append(profile);
+        listOfLinks.append(profile);
 
 
 
-    var lab = document.createElement("li");
-    lab.setAttribute("class", "list-inline-item");
+        var lab = document.createElement("li");
+        lab.setAttribute("class", "list-inline-item");
 
-    var labLink = document.createElement("a");
-    labLink.setAttribute("href", "https://zeptowatt.com/");
+        var labLink = document.createElement("a");
+        labLink.setAttribute("href", element[4]);
 
-    var labIcon = document.createElement("i");
-    labIcon.setAttribute("class", "fas fa-microscope");
+        var labIcon = document.createElement("i");
+        labIcon.setAttribute("class", "fas fa-microscope");
 
-    labLink.appendChild(labIcon);
-    lab.append(labLink);
+        labLink.appendChild(labIcon);
+        lab.append(labLink);
 
-    listOfLinks.append(lab);
+        listOfLinks.append(lab);
 
-    member.appendChild(image);
-    member.appendChild(name);
-    member.appendChild(position);
-    member.appendChild(listOfLinks);
+        member.appendChild(image);
+        member.appendChild(name);
+        member.appendChild(position);
+        member.appendChild(listOfLinks);
 
-    colMember.appendChild(member);
-    rowFaculty.appendChild(colMember);
-    
+        colMember.appendChild(member);
+        rowFaculty.appendChild(colMember);
+    });
+
     return rowFaculty;
 
 }
