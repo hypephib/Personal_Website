@@ -73,7 +73,7 @@ function generateFacultyList(data){
     var rowFaculty = document.createElement("div");
     rowFaculty.setAttribute("class", "row");
 
-    data.array.forEach(element => {
+    for(var x = 0; x < data.length; x++){
         var colMember = document.createElement("div");
         colMember.setAttribute("class", "col-sm-4");
 
@@ -141,7 +141,7 @@ function generateFacultyList(data){
 
         colMember.appendChild(member);
         rowFaculty.appendChild(colMember);
-    });
+    }
 
     return rowFaculty;
 
