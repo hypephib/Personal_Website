@@ -1,15 +1,35 @@
-$.ajax({
-    type: "GET",
-    url: "../data/Faculty_Sheet.csv",
-    dataType: "text",
-    success: function(data) {
-        alert("worked");
-    },
-    error: function (request, status, error) {
-        alert(request.responseText);
-    }
- });
+$(document).ready(function() {
+    $.ajax({
+        type: "GET",
+        url: "./data/Faculty_Sheet.csv",
+        dataType: "text",
+        success: function(data) {processData(data);}
+     });
+});
 
+function processData(allText){
+    var allTextLines = allText.split(/\r\n|\n/);
+    var headers = allTextLines[0].split(',');
+    var lines = [];
+
+    for (var i=1; i<allTextLines.length; i++) {
+        var data = allTextLines[i].split(',');
+        if (data.length == headers.length) {
+
+            var tarr = [];
+            for (var j=0; j<headers.length; j++) {
+                tarr.push(headers[j]+":"+data[j]);
+            }
+            lines.push(tarr);
+        }
+    }
+    generatePage(lines);
+
+}
+
+function generatePage(data){
+    console.log(data);
+}
 
 var section = document.createElement("SECTION");
 section.setAttribute("class", "bg-light page-section");
@@ -17,9 +37,7 @@ section.setAttribute("id", "facultySection");
 document.body.appendChild(section);
 
 
-// section -> container -> list of rows -> each row is a heading or list of people -> col-m-4
 
-// create one row of people for testing 
 
 // Create the main container
 var mainContainer = document.createElement("div");
