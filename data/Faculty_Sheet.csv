@@ -1,34 +1,34 @@
-Department,Full Name,Photo File Name,Profile Link,Lab Website,Position,Research Interest/Groups Association
-Biology,Julio M Fernandez,julio_m_fernandez.jpg,https://biology.columbia.edu/people/fernandez,https://zeptowatt.com/,Professor,"Structure & Biophysics, Neurobiology"
-Biology,John Hunt,john_hunt.jpg,https://biology.columbia.edu/people/hunt,,"Professor, Co-Director of Graduate Studies","Structure & Biophysics, Chemical Biology, Microbiology"
-Biology,Ozgur Sahin,ozgur_sahin.jpg,https://biology.columbia.edu/people/sahin,http://www.extremebio.org/,Associate Professor ,Structure & Biophysics
-Biology,Liang Tong,liang_tong.jpg,https://biology.columbia.edu/people/tong,http://tonglab.biology.columbia.edu/,"William R. Kenan, Jr. Professor","Structure & Biophysics, Chemical Biology"
-Biology,Jian Yang,jian_yang.jpg,https://biology.columbia.edu/people/yang,,Professor,"Neurobiology, Structure & Biophysics"
-Biochemistry & Molecular Biophysics ,Israel Sanchez Fernandez,,https://www.biochem.cumc.columbia.edu/profile/israel-s-fernandez-phd,,Assistant Professor,
-Biochemistry & Molecular Biophysics ,Anthony W.P. Fitzpatrick,anthony_wp_fitzpatrick.jpeg,https://zuckermaninstitute.columbia.edu/anthony-wp-fitzpatrick-phd,https://fitzpatricklab.zuckermaninstitute.columbia.edu/,"Assistant Professor, Principal Investigator at Columbia's Zuckerman Institute ",
-Biochemistry & Molecular Biophysics ,Joachim Frank,joachim_frank.jpg,https://biology.columbia.edu/people/frank,http://franklab.cpmc.columbia.edu/franklab/,Professor,"Structure & Biophysics, NAS Member, American Academy Member, 2017 Nobel Prize in Chemistry "
-Biochemistry & Molecular Biophysics ,Eric C. Greene,eric_c_green.jpg,https://cancer.columbia.edu/eric-c-greene-phd,http://www.thegreenelab.com,Professor,
-Biochemistry & Molecular Biophysics ,Wayne A. Henrickson,wayne_a_h.jpg,http://www.physiology.columbia.edu/Hendrickson.html,,Professor,Structure & Biophysics
-Biochemistry & Molecular Biophysics ,Barry Honig,barry_h.jpg,https://zuckermaninstitute.columbia.edu/barry-honig-phd,http://honig.c2b2.columbia.edu/,Professor ,
-Biochemistry & Molecular Biophysics ,Arthur Karlin,arthur_k.jpg,https://cmr.research.columbia.edu/people/arthur-karlin,,,
-Biochemistry & Molecular Biophysics ,Arthur G. Palmer III,arthur_g_p.jpg,https://biology.columbia.edu/people/palmer,,,
-Biochemistry & Molecular Biophysics ,Lawrence S. Shapiro,lawrence_s_s.jpg,https://zuckermaninstitute.columbia.edu/lawrence-s-shapiro-phd,,,
-Biochemistry & Molecular Biophysics ,Alexander Sobolevsky,alexander_s.jpg,https://www.ps.columbia.edu/profile/alexander-sobolevsky-phd,https://sobolevskylab.org/,,
-Chemistry,Ruben Gonzalez,ruben_gonzalez.jpg,https://chem.columbia.edu/people/faculty/ruben-gonzalez/,http://www.columbia.edu/cu/chemistry/groups/gonzalez/index.html,,
-Chemistry,Laura Kaufman,laura_k.jfif,https://chem.columbia.edu/people/faculty/laura-kaufman/,http://www.columbia.edu/cu/chemistry/groups/kaufman/,,
-Chemistry,Ann E. McDermott,ann_e_m.jpg,https://chem.columbia.edu/people/faculty/ann-mcdermott/,http://mcdermott.chem.columbia.edu/,,
-Chemistry,Wei Min,wei_min.jpg,https://chem.columbia.edu/people/faculty/wei-min/,http://www.columbia.edu/cu/chemistry/groups/min/,,
-Chemistry,Neel H. Shah,neel_shah.jpg,https://chem.columbia.edu/people/faculty/neel-shah/,https://neelhshah1.wixsite.com/shah-lab,,
-Microbiology & Immunology,Chi-Min Ho,chi-min-ho.jpg,https://microbiology.columbia.edu/faculty-chi-min-ho,https://www.cmholab.org/,,
-Ophthalmology,Tingting Yang,tyang.jpg,https://www.columbiaeye.org/profile/tyang?profile=researcher,https://www.urmc.rochester.edu/labs/yang.aspx,,
-Pathology,Adolfo Ferrando,adolfo_ferrando.jpg,https://icg.cpmc.columbia.edu/research-faculty/Adolfo-Ferrando,http://ferrandolab.org/,,
-Pharmacology,Qing R. Fan,qing_r_fan,http://pharmacology.columbia.edu/Fan.html,,,
-Pharmacology,Robert Kass,robert_s_kass.jpg,https://www.ps.columbia.edu/profile/robert-s-kass-phd,,,
-Physiology and Cellular Biophysics,Oliver Clarke,clarke_oliver.jpg,http://www.physiology.columbia.edu/Clarke.html,,,
-Physiology and Cellular Biophysics,Henry Colecraft,h_colecraft.jpg,http://www.neurosciencephd.columbia.edu/profile/hcolecraft,,,
-Physiology and Cellular Biophysics,Manu Ben Johny,,https://www.ps.columbia.edu/profile/manu-b-johny-phd,,Associate Professor,
-Physiology and Cellular Biophysics,Filippo Mancia,f_mancia.jpg,http://www.physiology.columbia.edu/mancia.html,https://www.mancialab.com/,,
-Physiology and Cellular Biophysics,Andrew R. Marks,andrew_r_marks.jpg,http://www.markslab.columbia.edu/marks_bio.html,http://www.markslab.columbia.edu/,,
-Physiology and Cellular Biophysics,Anne Moscona,anne_moscona.jpeg,https://microbiology.columbia.edu/faculty-anne-moscona,https://www.pediatrics.columbia.edu/research-labs/moscona-lab,,
-Psychiatry,Jonathan A. Javitch,jajavitch.jpg,http://www.physiology.columbia.edu/JonathanAJavitch.html,,,
-Psychiatry,Matthias Quick,mquick.jpg,https://www.columbiapsychiatry.org/profile/matthias-quick-phd,,,
+Department,Full Name,Photo File Name,Profile Link,Lab Website
+Biology,Julio M Fernandez,julio_m_fernandez.jpg,https://biology.columbia.edu/people/fernandez,https://zeptowatt.com/
+Biology,John Hunt,john_hunt.jpg,https://biology.columbia.edu/people/hunt,
+Biology,Ozgur Sahin,ozgur_sahin.jpg,https://biology.columbia.edu/people/sahin,http://www.extremebio.org/
+Biology,Liang Tong,liang_tong.jpg,https://biology.columbia.edu/people/tong,http://tonglab.biology.columbia.edu/
+Biology,Jian Yang,jian_yang.jpg,https://biology.columbia.edu/people/yang,
+Biochemistry & Molecular Biophysics ,Israel Sanchez Fernandez,,https://www.biochem.cumc.columbia.edu/profile/israel-s-fernandez-phd,
+Biochemistry & Molecular Biophysics ,Anthony W.P. Fitzpatrick,anthony_wp_fitzpatrick.jpeg,https://zuckermaninstitute.columbia.edu/anthony-wp-fitzpatrick-phd,https://fitzpatricklab.zuckermaninstitute.columbia.edu/
+Biochemistry & Molecular Biophysics ,Joachim Frank,joachim_frank.jpg,https://biology.columbia.edu/people/frank,http://franklab.cpmc.columbia.edu/franklab/
+Biochemistry & Molecular Biophysics ,Eric C. Greene,eric_c_green.jpg,https://cancer.columbia.edu/eric-c-greene-phd,http://www.thegreenelab.com
+Biochemistry & Molecular Biophysics ,Wayne A. Henrickson,wayne_a_h.jpg,http://www.physiology.columbia.edu/Hendrickson.html,
+Biochemistry & Molecular Biophysics ,Barry Honig,barry_h.jpg,https://zuckermaninstitute.columbia.edu/barry-honig-phd,http://honig.c2b2.columbia.edu/
+Biochemistry & Molecular Biophysics ,Arthur Karlin,arthur_k.jpg,https://cmr.research.columbia.edu/people/arthur-karlin,
+Biochemistry & Molecular Biophysics ,Arthur G. Palmer III,arthur_g_p.jpg,https://biology.columbia.edu/people/palmer,
+Biochemistry & Molecular Biophysics ,Lawrence S. Shapiro,lawrence_s_s.jpg,https://zuckermaninstitute.columbia.edu/lawrence-s-shapiro-phd,
+Biochemistry & Molecular Biophysics ,Alexander Sobolevsky,alexander_s.jpg,https://www.ps.columbia.edu/profile/alexander-sobolevsky-phd,https://sobolevskylab.org/
+Chemistry,Ruben Gonzalez,ruben_gonzalez.jpg,https://chem.columbia.edu/people/faculty/ruben-gonzalez/,http://www.columbia.edu/cu/chemistry/groups/gonzalez/index.html
+Chemistry,Laura Kaufman,laura_k.jfif,https://chem.columbia.edu/people/faculty/laura-kaufman/,http://www.columbia.edu/cu/chemistry/groups/kaufman/
+Chemistry,Ann E. McDermott,ann_e_m.jpg,https://chem.columbia.edu/people/faculty/ann-mcdermott/,http://mcdermott.chem.columbia.edu/
+Chemistry,Wei Min,wei_min.jpg,https://chem.columbia.edu/people/faculty/wei-min/,http://www.columbia.edu/cu/chemistry/groups/min/
+Chemistry,Neel H. Shah,neel_shah.jpg,https://chem.columbia.edu/people/faculty/neel-shah/,https://neelhshah1.wixsite.com/shah-lab
+Microbiology & Immunology,Chi-Min Ho,chi-min-ho.jpg,https://microbiology.columbia.edu/faculty-chi-min-ho,https://www.cmholab.org/
+Ophthalmology,Tingting Yang,tyang.jpg,https://www.columbiaeye.org/profile/tyang?profile=researcher,https://www.urmc.rochester.edu/labs/yang.aspx
+Pathology,Adolfo Ferrando,adolfo_ferrando.jpg,https://icg.cpmc.columbia.edu/research-faculty/Adolfo-Ferrando,http://ferrandolab.org/
+Pharmacology,Qing R. Fan,qing_r_fan.jpg,http://pharmacology.columbia.edu/Fan.html,
+Pharmacology,Robert Kass,robert_s_kass.jpg,https://www.ps.columbia.edu/profile/robert-s-kass-phd,
+Physiology and Cellular Biophysics,Oliver Clarke,clarke_oliver.jpg,http://www.physiology.columbia.edu/Clarke.html,
+Physiology and Cellular Biophysics,Henry Colecraft,h_colecraft.jpg,http://www.neurosciencephd.columbia.edu/profile/hcolecraft,
+Physiology and Cellular Biophysics,Manu Ben Johny,,https://www.ps.columbia.edu/profile/manu-b-johny-phd,
+Physiology and Cellular Biophysics,Filippo Mancia,f_mancia.jpg,http://www.physiology.columbia.edu/mancia.html,https://www.mancialab.com/
+Physiology and Cellular Biophysics,Andrew R. Marks,andrew_r_marks.jpg,http://www.markslab.columbia.edu/marks_bio.html,http://www.markslab.columbia.edu/
+Physiology and Cellular Biophysics,Anne Moscona,anne_moscona.jpeg,https://microbiology.columbia.edu/faculty-anne-moscona,https://www.pediatrics.columbia.edu/research-labs/moscona-lab
+Psychiatry,Jonathan A. Javitch,jajavitch.jpg,http://www.physiology.columbia.edu/JonathanAJavitch.html,
+Psychiatry,Matthias Quick,mquick.jpg,https://www.columbiapsychiatry.org/profile/matthias-quick-phd,
