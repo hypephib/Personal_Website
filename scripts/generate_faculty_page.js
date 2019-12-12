@@ -83,11 +83,11 @@ function generateFacultyList(data){
         //image
         var image = document.createElement("IMG");
         image.setAttribute("class", "mx-auto rounded-circle");
-        image.src = "img/faculty/" + element[2];
+        image.src = "img/faculty/" + data[x][2];
         
         //name
         var name = document.createElement("h4")
-        name.appendChild(document.createTextNode(element[1]));
+        name.appendChild(document.createTextNode(data[x][1]));
 
         //postion and research interest(Unchanged for now)
         var position = document.createElement("p");
@@ -108,7 +108,7 @@ function generateFacultyList(data){
         profile.setAttribute("class", "list-inline-item");
 
         var profileLink = document.createElement("a");
-        profileLink.setAttribute("href", element[3]);
+        profileLink.setAttribute("href", data[x][3]);
 
         var profileIcon = document.createElement("i");
         profileIcon.setAttribute("class", "fa fa-user");
@@ -124,7 +124,7 @@ function generateFacultyList(data){
         lab.setAttribute("class", "list-inline-item");
 
         var labLink = document.createElement("a");
-        labLink.setAttribute("href", element[4]);
+        labLink.setAttribute("href", data[x][4]);
 
         var labIcon = document.createElement("i");
         labIcon.setAttribute("class", "fas fa-microscope");
