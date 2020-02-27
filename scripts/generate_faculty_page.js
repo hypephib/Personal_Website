@@ -92,12 +92,12 @@ function generateFacultyList(data){
         //postion and research interest(Unchanged for now)
         var position = document.createElement("p");
         position.setAttribute("class", "text-muted") 
-        position.appendChild(document.createTextNode("Professor"));
+        position.appendChild(document.createTextNode(data[x][0]));
         position.appendChild(document.createElement("br"));
         
-        var interest = document.createElement("em");
-        interest.appendChild(document.createTextNode("Structure & Biophysics, Neurobiology"));
-        position.appendChild(interest);
+        // var interest = document.createElement("em");
+        // interest.appendChild(document.createTextNode("Structure & Biophysics, Neurobiology"));
+        // position.appendChild(interest);
 
         //profile and lab links 
 
