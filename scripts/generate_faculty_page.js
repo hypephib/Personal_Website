@@ -83,7 +83,11 @@ function generateFacultyList(data){
         //image
         var image = document.createElement("IMG");
         image.setAttribute("class", "mx-auto rounded-circle");
-        image.src = "img/faculty/" + data[x][2];
+        if (data[x][2] === "") {
+            image.src = "img/faculty/default.jpg";
+        }else{
+            image.src = "img/faculty/" + data[x][2];
+        }
         
         //name
         var name = document.createElement("h4")
