@@ -708,3 +708,41 @@ body {
  }
 
  
+/* side navigation bar
+.member-sidebar {
+  top: 100px;
+  position: absolute;
+  background-color: #D3D3D3;
+} */
+/* 
+.member-sidebar.affix {
+  position: static;
+} */
+
+@media (min-width: 992px) {
+  .member-sidebar.affix {
+  position: fixed;
+  }
+}
+
+.list-group-mine .list-group-item {
+  background-color: #f7f7f7;
+  color: black;
+  font-weight: bold;
+
+}
+
+.list-group-mine .list-group-item:hover {
+  background-color: #6CADDF;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+
+}
+
+.list-group-mine .list-group-item.active{
+  background-color: #6CADDF;
+  outline: none;
+  color: white;
+  font-weight: bold;
+}
