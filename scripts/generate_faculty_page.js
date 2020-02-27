@@ -103,15 +103,23 @@ function generateFacultyList(data){
         var profileButton = document.createElement("a");
         profileButton.setAttribute("role", "button");
         profileButton.setAttribute("class", "btn btn-primary");
-        profileButton.setAttribute("href", data[x][3]);
-        profileButton.setAttribute("target", "_blank");
+        if (data[x][3] === ""){
+            profileButton.setAttribute("href", "#page-top");
+        }else{
+            profileButton.setAttribute("href", data[x][3]);
+            profileButton.setAttribute("target", "_blank");
+        }
         profileButton.appendChild(document.createTextNode("Profile"));
 
         var labButton = document.createElement("a");
         labButton.setAttribute("role", "button");
         labButton.setAttribute("class", "btn btn-secondary");
-        labButton.setAttribute("href", data[x][4]);
-        labButton.setAttribute("target", "_blank");
+        if (data[x][4] === ""){
+            labButton.setAttribute("href", "#page-top");
+        }else{
+            labButton.setAttribute("href", data[x][4]);
+            labButton.setAttribute("target", "_blank");
+        }
         labButton.appendChild(document.createTextNode("Lab Website"))
 
         // var listOfLinks = document.createElement("ul");
