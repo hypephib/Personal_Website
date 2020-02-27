@@ -103,8 +103,8 @@ function generateFacultyList(data){
 
         var profileButton = document.createElement("button");
         profileButton.setAttribute("type", "button");
-        profileButton.setAttribute("class", "btn btn-primary")
-        profileButton.appendChild(document,createTextNode("Profile"))
+        profileButton.setAttribute("class", "btn btn-primary");
+        profileButton.appendChild(document.createTextNode("Profile"));
 
 
         // var listOfLinks = document.createElement("ul");
