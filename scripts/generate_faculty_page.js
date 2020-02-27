@@ -108,7 +108,7 @@ function generateFacultyList(data){
 
         var labButton = document.createElement("button");
         labButton.setAttribute("type", "button");
-        labButton.setAttribute("class", "btn btn-primary");
+        labButton.setAttribute("class", "btn btn-secondary");
         labButton.appendChild(document.createTextNode("Lab Website"))
 
         // var listOfLinks = document.createElement("ul");
