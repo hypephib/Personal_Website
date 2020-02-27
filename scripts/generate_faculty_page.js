@@ -99,45 +99,52 @@ function generateFacultyList(data){
         // interest.appendChild(document.createTextNode("Structure & Biophysics, Neurobiology"));
         // position.appendChild(interest);
 
-        //profile and lab links 
+        //profile and lab links buttons
 
-        var listOfLinks = document.createElement("ul");
-        listOfLinks.setAttribute("class", "list-inline social-buttons");
-
-        var profile = document.createElement("li");
-        profile.setAttribute("class", "list-inline-item");
-
-        var profileLink = document.createElement("a");
-        profileLink.setAttribute("href", data[x][3]);
-
-        var profileIcon = document.createElement("i");
-        profileIcon.setAttribute("class", "fa fa-user");
-
-        profileLink.appendChild(profileIcon);
-        profile.append(profileLink);
-
-        listOfLinks.append(profile);
+        var profileButton = document.createElement("button");
+        profileButton.setAttribute("type", "button");
+        profileButton.setAttribute("class", "btn btn-primary")
+        profileButton.appendChild(document,createTextNode("Profile"))
 
 
+        // var listOfLinks = document.createElement("ul");
+        // listOfLinks.setAttribute("class", "list-inline social-buttons");
 
-        var lab = document.createElement("li");
-        lab.setAttribute("class", "list-inline-item");
+        // var profile = document.createElement("li");
+        // profile.setAttribute("class", "list-inline-item");
 
-        var labLink = document.createElement("a");
-        labLink.setAttribute("href", data[x][4]);
+        // var profileLink = document.createElement("a");
+        // profileLink.setAttribute("href", data[x][3]);
 
-        var labIcon = document.createElement("i");
-        labIcon.setAttribute("class", "fas fa-microscope");
+        // var profileIcon = document.createElement("i");
+        // profileIcon.setAttribute("class", "fa fa-user");
 
-        labLink.appendChild(labIcon);
-        lab.append(labLink);
+        // profileLink.appendChild(profileIcon);
+        // profile.append(profileLink);
 
-        listOfLinks.append(lab);
+        // listOfLinks.append(profile);
+
+
+
+        // var lab = document.createElement("li");
+        // lab.setAttribute("class", "list-inline-item");
+
+        // var labLink = document.createElement("a");
+        // labLink.setAttribute("href", data[x][4]);
+
+        // var labIcon = document.createElement("i");
+        // labIcon.setAttribute("class", "fas fa-microscope");
+
+        // labLink.appendChild(labIcon);
+        // lab.append(labLink);
+
+        // listOfLinks.append(lab);
 
         member.appendChild(image);
         member.appendChild(name);
         member.appendChild(position);
-        member.appendChild(listOfLinks);
+        member.appendChild(profileButton);
+        // member.appendChild(labButton)
 
         colMember.appendChild(member);
         rowFaculty.appendChild(colMember);
