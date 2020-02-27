@@ -102,13 +102,13 @@ function generateFacultyList(data){
         //profile and lab links buttons
 
         var profileButton = document.createElement("button");
-        profileButton.setAttribute("type", "button");
+        profileButton.setAttribute("role", "button");
         profileButton.setAttribute("class", "btn btn-primary");
         profileButton.setAttribute("href", data[x][3]);
         profileButton.appendChild(document.createTextNode("Profile"));
 
         var labButton = document.createElement("button");
-        labButton.setAttribute("type", "button");
+        labButton.setAttribute("role", "button");
         labButton.setAttribute("class", "btn btn-secondary");
         labButton.setAttribute("href", data[x][4]);
         labButton.appendChild(document.createTextNode("Lab Website"))
