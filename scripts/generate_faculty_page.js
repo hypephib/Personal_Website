@@ -106,6 +106,10 @@ function generateFacultyList(data){
         profileButton.setAttribute("class", "btn btn-primary");
         profileButton.appendChild(document.createTextNode("Profile"));
 
+        var labButton = document.createElement("button");
+        labButton.setAttribute("type", "button");
+        labButton.setAttribute("class", "btn btn-primary");
+        labButton.appendChild(document.createTextNode("Lab Website"))
 
         // var listOfLinks = document.createElement("ul");
         // listOfLinks.setAttribute("class", "list-inline social-buttons");
@@ -144,7 +148,7 @@ function generateFacultyList(data){
         member.appendChild(name);
         member.appendChild(position);
         member.appendChild(profileButton);
-        // member.appendChild(labButton)
+        member.appendChild(labButton)
 
         colMember.appendChild(member);
         rowFaculty.appendChild(colMember);
